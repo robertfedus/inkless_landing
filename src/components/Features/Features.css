@@ -1,0 +1,146 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.features {
+  width: 100%;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.features .container {
+  width: 80%;
+}
+
+@media (max-width: 830px) {
+  .features .container .description {
+    width: 100%;
+  }
+}
+
+.features h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.features .description-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.features .description {
+  text-align: center;
+  width: 70%;
+  margin-block-start: 0em;
+}
+
+.features .description2 {
+  font-weight: 400;
+  margin: 2em 0px 3em 0px;
+  display: block;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.feature-card .image-wrapper {
+  border-radius: 50%;
+  z-index: 1;
+  height: 230px;
+  background: var(--purple);
+}
+
+.feature-card img {
+  height: 230px;
+}
+
+.feature-card .container {
+  z-index: 0;
+  margin-left: -100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  height: 13em;
+  border-radius: 25px;
+}
+
+.feature-card .container.left {
+  margin-right: -100px;
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+.feature-card .container.left .text {
+  margin-right: 120px;
+  margin-left: 0;
+}
+
+.feature-card .text {
+  margin-left: 120px;
+}
+
+.feature-card .title {
+  font-size: 1.2em;
+  margin-block-end: 0.5em;
+  align-self: flex-start;
+}
+
+.feature-card .text .feature-list-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.feature-card .text .feature-list {
+  height: 100%;
+  margin-block-start: 0em;
+  font-weight: 400;
+}
+
+.feature-cards {
+  margin: 1.5em 0px 1.5em 0px;
+  width: 100%;
+}
+
+@media (max-width: 1175px) {
+  .feature-card .container.left .text {
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .feature-card.left {
+    flex-direction: column-reverse !important;
+    align-items: center;
+  }
+  .feature-card .container.left {
+    margin: 0;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card .image-wrapper {
+    margin-bottom: 2em;
+  }
+
+  .feature-card .container {
+    height: auto;
+  }
+
+  .feature-card .text {
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .feature-card .container {
+    margin: 0;
+  }
+}

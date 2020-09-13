@@ -1,0 +1,93 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.subscription-card {
+  height: 20em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  width: 13em;
+  padding: 1px 1.5em;
+  padding-bottom: 0;
+}
+
+.subscription-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.subscription-title {
+  color: var(--purple);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.subscription-card .price {
+  display: block;
+  color: var(--pink);
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.subscription-card .period {
+  text-align: center;
+  margin-block-start: 0.3em;
+}
+
+.subscription-card .button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-card button {
+  background: var(--purple);
+  color: white;
+  outline: none;
+  border: none;
+  height: 35px;
+  width: 150px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.subscription-card button:hover {
+  background: var(--dark-purple);
+}
+
+.subscription-card .description {
+  line-height: 1.6;
+}
+
+.subscription-card.top {
+  align-self: flex-start;
+}
+
+.subscription-card.middle {
+  align-self: center;
+}
+
+.subscription-card.bottom {
+  align-self: flex-end;
+}
+
+@media (max-width: 980px) {
+  .subscription-card.top {
+    align-self: center;
+  }
+
+  .subscription-card.middle {
+    align-self: center;
+  }
+
+  .subscription-card.bottom {
+    align-self: center;
+  }
+
+  .subscription-card {
+    margin-bottom: 2em;
+  }
+}

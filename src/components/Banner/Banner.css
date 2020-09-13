@@ -1,0 +1,155 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.banner {
+  margin: 0;
+  /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+
+  border: none !important;
+}
+
+.banner .edge {
+  margin: 0;
+  height: 10vw;
+  background: var(--purple);
+
+  padding: 0;
+  border: none !important;
+}
+
+.banner .content {
+  margin: 0;
+  padding-top: 3em;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner .content .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.people-svg {
+  height: 20em;
+}
+
+.banner .right {
+  align-self: flex-start;
+}
+
+.banner .right img {
+  height: 20em;
+}
+
+.banner .left h1 {
+  font-size: 2.3em;
+  color: white;
+  text-align: left;
+  align-self: center;
+}
+
+.banner .left p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.banner .left .buttons {
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner .left .buttons button {
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  width: 130px;
+}
+
+.banner .left .buttons .left-button {
+  background: var(--pink);
+  margin-right: 0.5em;
+}
+
+.banner .left .buttons .right-button {
+  background: white;
+  color: var(--black);
+  margin-left: 0.5em;
+}
+
+.banner .left .buttons .left-button:hover {
+  background: var(--dark-pink);
+}
+
+.banner .left .buttons .right-button:hover {
+  background: var(--light-grey);
+}
+
+@media (max-width: 1130px) {
+  .banner .content .container {
+    flex-direction: column;
+  }
+
+  .banner .left h1,
+  .banner .left p {
+    text-align: center;
+  }
+
+  .banner .left .buttons {
+    justify-content: center;
+  }
+
+  .banner .right img {
+    height: 16em;
+  }
+
+  .banner .right {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner .right img {
+    height: 12em;
+  }
+
+  .banner .left h1 {
+    font-size: 2em;
+  }
+
+  .banner .left p {
+    font-size: 0.8em;
+  }
+
+  .banner .left .buttons button {
+    height: 40px;
+    font-size: 10px;
+
+    width: 100px;
+  }
+}
+
+@media (max-width: 905px) {
+  .banner .right {
+    margin-bottom: 5em;
+  }
+}

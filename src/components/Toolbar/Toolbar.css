@@ -1,0 +1,151 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.toolbar {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  background: transparent;
+  height: 60px;
+  width: 100%;
+  padding-top: 0.5em;
+  background: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar-logo {
+  height: 100%;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.toolbar-navigation {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.toolbar-auth {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar-auth a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.toolbar-auth button {
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 15px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar-auth button.full {
+  width: 121px;
+  background: var(--pink);
+}
+
+.toolbar-auth button.empty {
+  background: transparent;
+  width: 120px;
+  border: 1px solid white;
+}
+
+.toolbar-auth button.full:hover {
+  background: var(--dark-pink);
+}
+
+.toolbar-auth button.empty:hover {
+  color: var(--light-grey);
+}
+
+.toolbar-navigation-items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-navigation-items li {
+  padding: 0 0.5rem;
+}
+
+.toolbar-navigation-items span,
+.toolbar-navigation-items a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.toolbar-navigation-items span:hover,
+.toolbar-navigation-items span:active {
+  color: var(--light-grey);
+}
+
+.toolbar .spacer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .toolbar-navigation-items {
+    display: none;
+  }
+
+  .toolbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .toolbar-auth {
+    display: none;
+  }
+
+  .toolbar-navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggle-button {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 901px) {
+  .toolbar-toggle-button {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+}

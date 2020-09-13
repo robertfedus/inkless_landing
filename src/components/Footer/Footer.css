@@ -1,0 +1,105 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0px 0px 0px;
+}
+
+footer .container {
+  width: 60%;
+  height: 8em;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4em;
+}
+
+footer .container .logo img {
+  height: 1.8em;
+}
+
+footer .logo.mobile {
+  display: none;
+}
+
+footer .container .section a,
+footer .container .section span {
+  display: block;
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+footer .container .section a:hover,
+footer .container .section span:hover {
+  color: #91939c;
+}
+
+footer .container .section .first-link {
+  margin-top: 0 !important;
+}
+
+footer .container .section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .copyright {
+  background: var(--purple);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+footer .copyright .wrapper {
+  width: 60%;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .copyright .icon {
+  margin-left: 0.5em;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  footer .copyright {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
+  footer .logo.mobile {
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  footer .logo.desktop {
+    display: none;
+  }
+
+  footer .container,
+  footer .copyright .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .container,
+  footer .copyright .wrapper {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,101 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.platforms {
+  margin-top: 3em;
+  background: var(--purple);
+  padding-top: 5em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.platforms .container {
+  width: 80%;
+  display: flex;
+}
+
+.platforms .container .left {
+  width: 50%;
+}
+
+.platforms .container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.platforms .right img {
+  height: 17em;
+}
+
+.platforms .title {
+  color: white;
+  font-size: 2.3em;
+  margin-block-start: 0em;
+}
+
+.platforms .description {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: white;
+}
+
+.platforms .stores img {
+  height: 3em;
+}
+
+@media (max-width: 1090px) {
+  .platforms .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .platforms {
+    margin-top: 3em;
+    background: var(--purple);
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+
+  .platforms .container .right,
+  .platforms .container .left {
+    width: 100%;
+  }
+
+  .platforms .title {
+    text-align: center;
+    margin-top: 1.5em;
+  }
+
+  .platforms .description {
+    text-align: center;
+  }
+
+  .platforms .stores {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .platforms .right img {
+    height: 14em;
+  }
+}
+
+@media (max-width: 375px) {
+  .platforms .right img {
+    height: 12em;
+  }
+}
+
+@media (max-width: 350px) {
+  .platforms .right img {
+    height: 10em;
+  }
+}

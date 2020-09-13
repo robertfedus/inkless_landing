@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  color: var(--black);
+  box-sizing: border-box;
+  background: var(--bg-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black: #4d5061;
+  --purple: #7a6bee;
+  --dark-purple: #604eee;
+  --pink: #f85568;
+  --dark-pink: #f53a50;
+  --bg-white: #f2f3f8;
+  --section-rotate: 7vw;
+  --light-grey: #dadada;
+}
+
+p {
+  line-height: 1.6;
+}
+
+button,
+a,
+span {
+  transition: 0.3s;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*
+Light 300
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700
+*/

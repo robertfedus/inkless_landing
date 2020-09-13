@@ -1,0 +1,168 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.order-form {
+  background: var(--purple);
+  /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%); */
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%); */
+  clip-path: polygon(0 0, 100% 21%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 21%, 100% 100%, 0% 100%);
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+.order-form .title {
+  font-size: 2em;
+  color: white;
+}
+
+.order-form .description {
+  font-weight: 400;
+  color: white;
+  margin-block-start: 0.2em;
+  font-size: 1.2em;
+}
+
+.order-form form select {
+  width: 41.8em;
+  height: 3.3em;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-family: Quicksand;
+  font-weight: 400;
+  padding-left: 3em;
+  padding-right: 2em;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.order-form form select:hover {
+  background: var(--dark-purple);
+}
+
+.order-form form select option:hover {
+  background: var(--black);
+}
+
+.order-form form select:focus {
+  outline: none;
+}
+
+.order-form form input {
+  font-size: 15px;
+  width: 35em;
+  height: 3em;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  font-family: Quicksand;
+  font-weight: 400;
+  padding-left: 3em;
+  padding-right: 3.8em;
+  display: block;
+}
+
+.order-form form button {
+  height: 3em;
+  font-size: 15px;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: white;
+  background: var(--pink);
+  border: none;
+  border-radius: 25px;
+  width: 10em;
+  cursor: pointer;
+}
+
+.order-form form button:hover {
+  background: var(--dark-pink);
+}
+
+.order-form form button:focus {
+  outline: none;
+}
+
+.order-form form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+.order-form form .wrapper {
+  position: relative;
+  margin-top: 1em;
+}
+
+.order-form form .icon {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  color: white;
+}
+
+.order-form .note {
+  color: white;
+  font-size: 12px;
+}
+
+@media (max-width: 830px) {
+  .order-form {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (max-width: 660px) {
+  .order-form form input {
+    width: 22em;
+  }
+
+  .order-form form select {
+    width: 28.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  .order-form form input {
+    width: 17em;
+  }
+
+  .order-form form select {
+    width: 23.8em;
+  }
+}
+
+@media (max-width: 350px) {
+  .order-form form input {
+    width: 12em;
+  }
+
+  .order-form form select {
+    width: 18.8em;
+  }
+}

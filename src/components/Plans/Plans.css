@@ -1,0 +1,27 @@
+/*
+ * Created on Sat Aug 15 2020
+ *
+ * Copyright (c) 2020 One FPS
+*/
+
+.plans {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.plans-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  height: 28em;
+}
+
+@media (max-width: 980px) {
+  .plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: initial;
+  }
+}
